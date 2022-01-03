@@ -15,8 +15,10 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#fd015d" />
       </Head>
       <DefaultSeo {...SEO} />
-      <Component {...pageProps} />
-      <EmojiFavicon emoji="🤖" />
+      <div className="min-h-full bg-stone-800">
+        <Component {...pageProps} />
+      </div>
+      <EmojiFavicon emoji="💀" />
     </>
   )
 }

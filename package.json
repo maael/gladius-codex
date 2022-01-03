@@ -1,5 +1,5 @@
 {
-  "name": "next-template",
+  "name": "gladius-codex",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Matthew Elphick <matt.a.elphy@gmail.com> (https://mael.tech)",
@@ -8,8 +8,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "echo TODO",
     "prettier": "prettier --ignore-path .gitignore --write .",
-    "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore"
+    "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -24,29 +26,32 @@
     ]
   },
   "dependencies": {
-    "fathom-client": "^3.1.0",
-    "next": "^11.1.0",
-    "next-seo": "^4.26.0",
+    "fathom-client": "^3.2.0",
+    "next": "^12.0.7",
+    "next-seo": "^4.28.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/eslint-parser": "^7.15.0",
-    "@babel/eslint-plugin": "^7.14.5",
-    "@next/eslint-plugin-next": "^11.1.0",
-    "@types/node": "^15.12.1",
-    "@types/react": "^17.0.9",
-    "@typescript-eslint/eslint-plugin": "^4.29.1",
-    "@typescript-eslint/parser": "^4.29.1",
-    "eslint": "^7.32.0",
-    "eslint-config-next": "^11.1.0",
+    "@babel/core": "^7.16.7",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/eslint-plugin": "^7.16.5",
+    "@next/eslint-plugin-next": "^12.0.7",
+    "@types/node": "^17.0.7",
+    "@types/react": "^17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "autoprefixer": "^10.4.1",
+    "eslint": "^8.6.0",
+    "eslint-config-next": "^12.0.7",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^4.3.8",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2",
-    "typescript": "^4.3.5"
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.1.5",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.9",
+    "typescript": "^4.5.4"
   }
 }
