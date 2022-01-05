@@ -1,5 +1,6 @@
 import '~/styles/main.css'
 import Head from 'next/head'
+import Link from 'next/link'
 import { AppProps } from 'next/app'
 import { DefaultSeo } from 'next-seo'
 import useFathom from '~/components/hooks/useFathom'
@@ -15,7 +16,10 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#fd015d" />
       </Head>
       <DefaultSeo {...SEO} />
-      <div className="min-h-full bg-stone-800">
+      <div className="min-h-full bg-stone-800 text-white">
+        <Link href="/">
+          <a className="text-green-400 font-bold">Gladius Codex</a>
+        </Link>
         <Component {...pageProps} />
       </div>
       <EmojiFavicon emoji="💀" />

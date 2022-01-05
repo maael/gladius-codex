@@ -1,0 +1,2987 @@
+{
+  "image": "Compendium",
+  "readableName": "Neutral",
+  "flavour": "<style name='Italic'/>“Amongst the stars, man has met many alien races—and destroyed them all.”<style name='Default'/><br/><br/><string name='Factions/NeutralShortFlavor'/>",
+  "units": [
+    {
+      "group": [
+        {
+          "size": "3",
+          "rowSize": "3",
+          "memberDeltaX": "120",
+          "memberDeltaY": "80"
+        }
+      ],
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "CloseCombatWeapon"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "6.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "3"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "36.0"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "move": [
+            {}
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Regeneration"
+            },
+            {
+              "name": "Rending"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Ambull",
+      "type": "Neutral/Ambull",
+      "readableName": "Ambulls",
+      "description": "Powerful native brawler unit that regenerates hitpoints each turn.",
+      "flavour": "The Ambull is an ape-like Xenos species native to the desert Death World of Luther McIntyre IX, which has spread throughout the Imperium of man (presumably as a result of failed attempts at domestication). They are a subterranean race, able to move through ice, sand or rock at speed, and prone to excavating long tunnels as homes."
+    },
+    {
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "24.0"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "max": "0"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "36"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "strategyModifiers": [
+        "\n\t"
+      ],
+      "actions": [
+        {
+          "die": [
+            {}
+          ],
+          "spawnUnits": [
+            {
+              "unit": "Neutral/CatachanDevil",
+              "icon": "Units/Neutral/CatachanDevilLair",
+              "cooldown": "20",
+              "cooldownRemaining": "20",
+              "cooldownScalesWithPace": "1",
+              "countMax": "6",
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Fortification"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "CatachanDevilLair",
+      "type": "Neutral/CatachanDevilLair",
+      "readableName": "Catachan Devil Lair",
+      "description": "Stationary structure unit that spawns Catachan Devils over time.",
+      "spawnCountMax": "1"
+    },
+    {
+      "group": [
+        {
+          "size": "1",
+          "rowSize": "3",
+          "memberDeltaX": "80",
+          "memberDeltaY": "64"
+        }
+      ],
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "CloseCombatWeapon"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "12.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "3"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "3"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "10"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "5"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "36.0"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "move": [
+            {}
+          ],
+          "auraOfFear": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "Fear"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Tile",
+                              "excludeRadius": "0",
+                              "radius": "1"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "passive": "1"
+            }
+          ],
+          "hammerOfWrath": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "HammerOfWrath",
+                                              "duration": "1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "consumedActionPoints": "0",
+              "consumedMovement": "0",
+              "cooldown": "3"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Fleet"
+            },
+            {
+              "name": "Infiltrate"
+            },
+            {
+              "name": "MonstrousCreature"
+            },
+            {
+              "name": "MoveThroughCover"
+            },
+            {
+              "name": "Relentless"
+            },
+            {
+              "name": "Smash"
+            },
+            {
+              "name": "Stealth"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "CatachanDevil",
+      "type": "Neutral/CatachanDevil",
+      "readableName": "Catachan Devil",
+      "description": "Devastating native unit that frightens enemies and fights in a reckless rage.",
+      "flavour": "Native to the death world Catachan, the Devil is scorpion-like in appearance, with a long segmented body ending in a poisonous barbed tail. A full-grown Devil can reach up to thirty meters in length, with the sixty legs of a mature 'Fiddler' allowing it to move at great speeds through all terrain. Once it's upon its prey, it will either shred it with its claws or stun it with its barbs, before consuming it.",
+      "spawnCountMax": "1",
+      "spawnWeight": "0"
+    },
+    {
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "TwinLinkedHeavyPhosphorBlaster"
+            },
+            {
+              "name": "IncendineCombustor"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "energyUpkeep": [
+                    {
+                      "base": "3.0"
+                    }
+                  ],
+                  "energyCost": [
+                    {
+                      "base": "30.0"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "24.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "3"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "3"
+                    }
+                  ],
+                  "oreCost": [
+                    {
+                      "base": "30.0"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "42.0"
+                    }
+                  ],
+                  "rangedAccuracy": [
+                    {
+                      "base": "6"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "idle": [
+            {}
+          ],
+          "move": [
+            {}
+          ],
+          "auraOfFear": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "Fear"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Tile",
+                              "excludeRadius": "0",
+                              "radius": "1"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "passive": "1",
+              "enabled": "0",
+              "visible": "0"
+            }
+          ],
+          "hammerOfWrath": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "HammerOfWrath",
+                                              "duration": "1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "consumedActionPoints": "0",
+              "consumedMovement": "0",
+              "cooldown": "3",
+              "requiredUpgrade": "AdeptusMechanicus/HammerOfWrath"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "AdeptusMechanicus/CanticlesOfTheOmnissiah"
+            },
+            {
+              "name": "ExtraVehicleArmour",
+              "requiredUpgrade": "AdeptusMechanicus/ExtraVehicleArmour"
+            },
+            {
+              "name": "Fearless"
+            },
+            {
+              "name": "FeelNoPain"
+            },
+            {
+              "name": "RepulsorGrid"
+            },
+            {
+              "name": "Vehicle"
+            },
+            {
+              "name": "Walker"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "KastelanRobot",
+      "type": "Neutral/KastelanRobot",
+      "readableName": "Kastelan Robot",
+      "description": "Extremely durable and heavily armed Canticles of the Omnissiah combat walker unit.",
+      "flavour": "Kastelan Robots are ancient monstrosities that stamp to war, each an unliving giant assigned a deadly purpose by its master. Soulless, these metallic golems are given thought only by the doctrina wafers in their recessed chestslots and the Cybernetica Datasmiths that program their every move. These machines are walking relics from aeons past, and all the deadlier for it—the air nearby thrums with power, bullets ricocheting from repulsor fields that glow like golden cages around them. Volleys of phosphor blasts and promethium incinerate their foes wherever they may hide, and crushing fists bring ruin wherever they strike. The violence meted out by each maniple is as inspiring to the Omnissiah's faithful as it is terrifying to his foes.",
+      "faction": "AdeptusMechanicus"
+    },
+    {
+      "group": [
+        {
+          "size": "7",
+          "rowSize": "4",
+          "memberDeltaX": "90",
+          "memberDeltaY": "50"
+        }
+      ],
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "CloseCombatWeapon"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "foodUpkeep": [
+                    {
+                      "base": "1.0"
+                    }
+                  ],
+                  "foodCost": [
+                    {
+                      "base": "20.0"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "2.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "4"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "5"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "24.0"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "1"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "move": [
+            {}
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Fleet"
+            },
+            {
+              "name": "Infiltrate"
+            },
+            {
+              "name": "MoveThroughCover"
+            },
+            {
+              "name": "ForestStealth"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "KrootHound",
+      "type": "Neutral/KrootHound",
+      "readableName": "Kroot Hounds",
+      "description": "Agile predator unit that is particularly dangerous in forests.",
+      "flavour": "The pseudo-avian Kroot is uniquely flexible, able to absorb the genetic data of other races by consuming them, but sometimes isolated Kroot communities run into evolutionary dead ends. The Kroot Hound is one such dead end, a devolution of the Kroot into a wolf-like species. On Gladius Prime, they have run feral for generations.",
+      "faction": "Tau",
+      "spawnDistanceMin": "6"
+    },
+    {
+      "group": [
+        {
+          "size": "3",
+          "rowSize": "3",
+          "memberDeltaX": "80",
+          "memberDeltaY": "64"
+        }
+      ],
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "CloseCombatWeapon"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "12.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "12"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "3"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "42.0"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "move": [
+            {}
+          ],
+          "mindControl": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "MindControl"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Tile",
+                              "radius": "1",
+                              "excludeRadius": "0"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "passive": "1"
+            }
+          ],
+          "enslavement": [
+            {
+              "beginTargets": [
+                {
+                  "target": [
+                    {
+                      "conditions": [
+                        {
+                          "unit": [
+                            {
+                              "enemy": [
+                                ""
+                              ],
+                              "morale": [
+                                {
+                                  "less": "6.5"
+                                }
+                              ],
+                              "moraleMax": [
+                                {
+                                  "greater": "0.0"
+                                }
+                              ],
+                              "noTrait": [
+                                {
+                                  "name": "Headquarters"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "Enslaved",
+                                              "removeOnSourceDeath": "1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ],
+                      "rangeMax": "1"
+                    }
+                  ]
+                }
+              ],
+              "cooldown": "3"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "PsychicLash"
+            },
+            {
+              "name": "Skimmer"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Enslaver",
+      "type": "Neutral/Enslaver",
+      "readableName": "Enslavers",
+      "description": "Highly dangerous warp unit that enslaves the mind of its enemies.",
+      "flavour": "During the War in Heaven, legend tells that the Old Ones engineered new Warp-sensitive species to defeat the C'tan—Krork, Aeldari, Man and more. Yet they bargained without the denizens of the warp, the most numerous of which were the Enslavers or Psyrens. These transdimensional beings were able to rapidly enslave the new races, and hence aided in the downfall of the Old Ones. Today, Enslaver incursions are rare, but extremely destructive unless ended quickly.",
+      "spawnCountMax": "1",
+      "strengthModifier": "2"
+    },
+    {
+      "group": [
+        {
+          "size": "6",
+          "rowSize": "3",
+          "memberDeltaX": "70",
+          "memberDeltaY": "60"
+        }
+      ],
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "Autogun"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "4"
+                    }
+                  ],
+                  "foodUpkeep": [
+                    {
+                      "base": "1.0"
+                    }
+                  ],
+                  "foodCost": [
+                    {
+                      "base": "10.0"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "2.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "3"
+                    }
+                  ],
+                  "oreCost": [
+                    {
+                      "base": "10.0"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "24.0"
+                    }
+                  ],
+                  "rangedAccuracy": [
+                    {
+                      "base": "6"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "strategyModifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "increaseInfantryScore": [
+                    {
+                      "base": "1.0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "idle": [
+            {}
+          ],
+          "move": [
+            {}
+          ],
+          "returnToTheShadows": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "duration": "1",
+                                              "name": "Shrouded"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "cooldown": "2",
+              "consumedActionPoints": "0",
+              "consumedMovement": "0",
+              "requiredActionPoints": "0"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "CultAmbush"
+            },
+            {
+              "name": "ExtraInfantryArmour",
+              "requiredUpgrade": "ChaosSpaceMarines/ExtraInfantryArmour"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "NeophyteHybrid",
+      "type": "Neutral/NeophyteHybrid",
+      "readableName": "Neophyte Hybrids",
+      "description": "Ranged infantry unit specialized in ambushes.",
+      "flavour": "Each cultist is spry and tough of build—weathered over a lifetime of hard labour, their physical strength and reaction is bolstered by the alien genes lurking within. Neophyte Hybrids do not bear the outward hallmarks of the Patriarch's sacred touch; as their brood leaders tell them, their blessings are of the soul more than the body. These third and fourth generation hybrids can pass for human—some are even cunning enough to infiltrate the Astra Militarum. When the cult goes on the attack, these Neophytes show their true colours. Surging from sewers, catacombs and shadowy barracks, they swarm their enemies in such number they can seize control of a planet's defences within the first hours of conquest.",
+      "dlc": "Supplement1",
+      "spawnDistanceMin": "6"
+    },
+    {
+      "group": [
+        {
+          "size": "5",
+          "rowSize": "3",
+          "memberDeltaX": "80",
+          "memberDeltaY": "64"
+        }
+      ],
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "CloseCombatWeapon"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "3.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "1.5"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "36.0"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "move": [
+            {}
+          ],
+          "spaceSlip": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "duration": "1",
+                                              "name": "SpaceSlip"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "cooldown": "2",
+              "consumedActionPoints": "0",
+              "consumedMovement": "0",
+              "requiredActionPoints": "0"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Flyer"
+            },
+            {
+              "name": "PsychneueinInfest"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Psychneuein",
+      "type": "Neutral/Psychneuein",
+      "readableName": "Psychneuein",
+      "description": "Airborne elusive warp unit that infests its victims.",
+      "flavour": "A rare Warp-sensitive creature apparently native to Prospero, the Psychneuein seems capable of travel through the Old One's Webways, meaning they're widely distributed around the galaxy. Parallel evolution has resulted in a wasp-like appearance, but a mature adult's significant strength, speed, toughness and rumoured ability to turn insubstantial at will makes them a threat to any sentient being."
+    },
+    {
+      "group": [
+        {
+          "size": "1",
+          "rowSize": "3",
+          "memberDeltaX": "80",
+          "memberDeltaY": "64"
+        }
+      ],
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "GreaterCleaverOfKhorne"
+            },
+            {
+              "_": ">\n\t\t\t\n\t\t",
+              "name": "GorestormCannon",
+              "slotName": "GorestormCannon",
+              "enabled": "0"
+            },
+            {
+              "name": "HadesGatlingCannon",
+              "slotName": "HadesGatlingCannon",
+              "enabled": "0"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "9"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "108.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "12"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "10"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "78.0"
+                    }
+                  ],
+                  "rangedAccuracy": [
+                    {
+                      "base": "6"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "move": [
+            {}
+          ],
+          "auraOfFear": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "Fear"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Tile",
+                              "excludeRadius": "0",
+                              "radius": "1"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "passive": "1"
+            }
+          ],
+          "hammerOfWrath": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "HammerOfWrath",
+                                              "duration": "1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "consumedActionPoints": "0",
+              "consumedMovement": "0",
+              "cooldown": "3"
+            }
+          ],
+          "useWeapon": [
+            {
+              "cooldown": "1",
+              "requiredActionPoints": "0",
+              "consumedActionPoints": "0",
+              "weaponSlotName": "GorestormCannon"
+            },
+            {
+              "cooldown": "1",
+              "requiredActionPoints": "0",
+              "consumedActionPoints": "0",
+              "weaponSlotName": "HadesGatlingCannon"
+            }
+          ],
+          "warpIn": [
+            {}
+          ],
+          "warpOut": [
+            {}
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Daemon"
+            },
+            {
+              "name": "Fleet"
+            },
+            {
+              "name": "FuelledByRage"
+            },
+            {
+              "name": "FuriousCharge"
+            },
+            {
+              "name": "ItWillNotDie"
+            },
+            {
+              "name": "MoveThroughCover"
+            },
+            {
+              "name": "Rage"
+            },
+            {
+              "name": "Relentless"
+            },
+            {
+              "name": "Strikedown"
+            },
+            {
+              "name": "SuperHeavy"
+            },
+            {
+              "name": "Vehicle"
+            },
+            {
+              "name": "Walker"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "LordOfSkulls",
+      "type": "Neutral/LordOfSkulls",
+      "readableName": "Lord of Skulls",
+      "description": "Almost unstoppable war engine that can slaughter entire armies.",
+      "flavour": "Grinding across the battlefield on rumbling tracks, the Lord of Skulls towers over its terrified foes. Given life by the raging spirit of a Bloodthirster bound within its hull, and powered by the boiling blood of murderers, this unholy engine of war is death to all who stand before it. Its devastating guns reduce swathes of victims to ruin, drowning them in jets of red-hot gore or burying them under rains of gnashing skulls. As it ploughs through the enemy ranks, the Daemon Engine wields its roaring cleaver with a speed and skill that is entirely horrifying in something so huge. Entire ranks of enemy warriors are swept away with a single swing, tanks and monstrous beasts swatted through the air like toys. Even towering war engines such as Stompas or Titans are made to look clumsy and sluggish as the Lord of Skulls hacks off their limbs and tears open their armoured torsos amid blossoms of dirty flame. Few warriors can face the Lord of Skulls and live, for it is a machine of absolute destruction.",
+      "dlc": "LordOfSkulls",
+      "spawnCountMax": "1"
+    },
+    {
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "Shadowlimbs"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "16.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "4"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "10"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "48.0"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "3"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "move": [
+            {}
+          ],
+          "auraOfFear": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "Fear"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Tile",
+                              "excludeRadius": "0",
+                              "radius": "1"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "passive": "1"
+            }
+          ],
+          "hammerOfWrath": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "HammerOfWrath",
+                                              "duration": "1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "consumedActionPoints": "0",
+              "consumedMovement": "0",
+              "cooldown": "3"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "AversionToLight"
+            },
+            {
+              "name": "Deathshriek"
+            },
+            {
+              "name": "Flyer"
+            },
+            {
+              "name": "MonstrousCreature"
+            },
+            {
+              "name": "Shrouded"
+            },
+            {
+              "name": "Smash"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Umbra",
+      "type": "Neutral/Umbra",
+      "readableName": "Umbra",
+      "description": "Terrifying flying monstrous creature that is vulnerable to light.",
+      "flavour": "The Umbra are an alien species appearing as smooth black spheres that live in the void of space, often observed attracted to areas resonant of the warp such as starship hulls and warp engines or suspected entrances to the Aeldari Webway. They can manipulate and control shadows to form terrifying limbs of hooks, blades, teeth and other nightmarish shapes."
+    },
+    {
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "PowerAxe"
+            },
+            {
+              "name": "ServoArm",
+              "slotName": "ServoArm",
+              "enabled": "0"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "8"
+                    }
+                  ],
+                  "energyUpkeep": [
+                    {
+                      "base": "16.0"
+                    }
+                  ],
+                  "energyCost": [
+                    {
+                      "base": "160.0"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "12.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "10"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "12"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "3"
+                    }
+                  ],
+                  "foodCost": [
+                    {
+                      "base": "160.0"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "72.0"
+                    }
+                  ],
+                  "rangedAccuracy": [
+                    {
+                      "base": "10"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "idle": [
+            {}
+          ],
+          "move": [
+            {}
+          ],
+          "useWeapon": [
+            {
+              "cooldown": "3",
+              "weaponSlotName": "ServoArm"
+            }
+          ],
+          "blessingsOfTheOmnissiah": [
+            {
+              "beginTargets": [
+                {
+                  "target": [
+                    {
+                      "conditions": [
+                        {
+                          "unit": [
+                            {
+                              "allied": [
+                                ""
+                              ],
+                              "damaged": [
+                                ""
+                              ]
+                            },
+                            {
+                              "trait": [
+                                {
+                                  "name": "Fortification"
+                                },
+                                {
+                                  "name": "Vehicle"
+                                }
+                              ],
+                              "match": "Any"
+                            }
+                          ]
+                        }
+                      ],
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "hitpoints": [
+                                            {
+                                              "add": "16"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ],
+                      "rangeMax": "1"
+                    }
+                  ]
+                }
+              ],
+              "cooldown": "1"
+            }
+          ],
+          "awakenTheMachine": [
+            {
+              "beginTargets": [
+                {
+                  "target": [
+                    {
+                      "conditions": [
+                        {
+                          "unit": [
+                            {
+                              "allied": [
+                                ""
+                              ]
+                            },
+                            {
+                              "trait": [
+                                {
+                                  "name": "Fortification"
+                                },
+                                {
+                                  "name": "Vehicle"
+                                }
+                              ],
+                              "match": "Any"
+                            }
+                          ]
+                        }
+                      ],
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "duration": "3",
+                                              "name": "PowerOfTheMachineSpirit"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ],
+                      "rangeMax": "1"
+                    }
+                  ]
+                }
+              ],
+              "cooldown": "1"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "FeelNoPain"
+            },
+            {
+              "name": "Hero"
+            },
+            {
+              "name": "RefractorField"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "TechpriestBetrayer",
+      "type": "Neutral/TechpriestBetrayer",
+      "readableName": "Techpriest Betrayer",
+      "visible": "0"
+    },
+    {
+      "group": [
+        {
+          "size": "5",
+          "rowSize": "3",
+          "memberDeltaX": "70",
+          "memberDeltaY": "70"
+        }
+      ],
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "NeutronBlaster"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "foodCost": [
+                    {
+                      "base": "15.0"
+                    }
+                  ],
+                  "foodUpkeep": [
+                    {
+                      "base": "1.5"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "3.0"
+                    }
+                  ],
+                  "meleeAccuracy": [
+                    {
+                      "base": "6"
+                    }
+                  ],
+                  "meleeAttacks": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "4"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "3"
+                    }
+                  ],
+                  "oreCost": [
+                    {
+                      "base": "15.0"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "30.0"
+                    }
+                  ],
+                  "strengthDamage": [
+                    {
+                      "base": "1"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ],
+          "move": [
+            {}
+          ],
+          "jumpPack": [
+            {
+              "modifiers": [
+                {
+                  "modifier": [
+                    {
+                      "effects": [
+                        {
+                          "movement": [
+                            {
+                              "add": "1"
+                            }
+                          ],
+                          "movementMax": [
+                            {
+                              "add": "1"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "beginTargets": [
+                {
+                  "target": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "duration": "1",
+                                              "name": "HammerOfWrath"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "cooldown": "3"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Fleet"
+            },
+            {
+              "name": "HitAndRun"
+            },
+            {
+              "name": "MoveThroughCover"
+            },
+            {
+              "name": "RuinsStealth"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "VespidStingwing",
+      "type": "Neutral/VespidStingwing",
+      "readableName": "Vespid Stingwings",
+      "description": "Quick ranged infantry unit that excels at combat in ruins and can fly over obstacles.",
+      "flavour": "Vespid Stingwings dart into battle with unsettling insectile speed. The high pitched whine of their wings inspires atavistic revulsion, seeming to come from every direction at once as it echoes and bounces from ruins and wreckage. When they strike, the Vespids do so with lightning speed, dropping from above with their neutron blasters emitting bolts of translucent fire. Each shot shimmers clean through the armour of the foe, scouring their bodies with massive doses of radiation and burning them alive from the inside.",
+      "faction": "Tau",
+      "spawnDistanceMin": "6"
+    },
+    {
+      "group": [
+        {
+          "size": "1"
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "hitpointsMax": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "levelMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "sight": [
+                    {
+                      "base": "1"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "move": [
+            {}
+          ],
+          "activate": [
+            {
+              "charges": "1",
+              "requiredUpgrade": "SpaceMarines/LastStandReady"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Artefact"
+            },
+            {
+              "name": "Invulnerable"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Artefacts",
+      "type": "Neutral/Artefacts",
+      "spawnWeight": "0"
+    },
+    {
+      "group": [
+        {
+          "size": "1"
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "hitpointsMax": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "levelMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "max": "0"
+                    }
+                  ],
+                  "sight": [
+                    {
+                      "base": "1"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "tactic": [
+            {
+              "playerModifiers": [
+                {
+                  "modifier": [
+                    {
+                      "effects": [
+                        {
+                          "addTrait": [
+                            {
+                              "name": "Artefacts/Damage"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "icon": "Units/Neutral/Artefacts/Damage",
+              "name": "Artefacts/Damage",
+              "passive": "1"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Artefact"
+            },
+            {
+              "name": "Invulnerable"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Artefacts",
+      "type": "Neutral/Artefacts"
+    },
+    {
+      "group": [
+        {
+          "size": "1"
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "hitpointsMax": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "levelMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "max": "0"
+                    }
+                  ],
+                  "sight": [
+                    {
+                      "base": "1"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "tactic": [
+            {
+              "playerModifiers": [
+                {
+                  "modifier": [
+                    {
+                      "effects": [
+                        {
+                          "addTrait": [
+                            {
+                              "name": "Artefacts/Healing"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "icon": "Units/Neutral/Artefacts/Healing",
+              "name": "Artefacts/Healing",
+              "passive": "1"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Artefact"
+            },
+            {
+              "name": "Invulnerable"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Artefacts",
+      "type": "Neutral/Artefacts",
+      "visible": "0",
+      "spawnWeight": "0"
+    },
+    {
+      "group": [
+        {
+          "size": "1"
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "hitpointsMax": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "levelMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "max": "0"
+                    }
+                  ],
+                  "sight": [
+                    {
+                      "base": "1"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "genericUnitAbility": [
+            {
+              "beginTargets": [
+                {
+                  "selfTarget": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "name": "Artefacts/Loyalty"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "icon": "Units/Neutral/Artefacts/Loyalty",
+              "name": "Artefacts/Loyalty",
+              "passive": "1"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Artefact"
+            },
+            {
+              "name": "Invulnerable"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Artefacts",
+      "type": "Neutral/Artefacts"
+    },
+    {
+      "group": [
+        {
+          "size": "1"
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "hitpointsMax": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "levelMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "max": "0"
+                    }
+                  ],
+                  "sight": [
+                    {
+                      "base": "1"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "tactic": [
+            {
+              "playerModifiers": [
+                {
+                  "modifier": [
+                    {
+                      "effects": [
+                        {
+                          "addTrait": [
+                            {
+                              "name": "Artefacts/Hitpoints"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "icon": "Units/Neutral/Artefacts/Hitpoints",
+              "name": "Artefacts/Hitpoints",
+              "passive": "1"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Artefact"
+            },
+            {
+              "name": "Invulnerable"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Artefacts",
+      "type": "Neutral/Artefacts"
+    },
+    {
+      "group": [
+        {
+          "size": "1"
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "hitpointsMax": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "levelMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "max": "0"
+                    }
+                  ],
+                  "sight": [
+                    {
+                      "base": "1"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "genericUnitAbility": [
+            {
+              "beginTargets": [
+                {
+                  "target": [
+                    {
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "reveal": [
+                                            ""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Tile",
+                              "radius": "1"
+                            }
+                          ]
+                        }
+                      ],
+                      "rangeMax": "-1"
+                    }
+                  ]
+                }
+              ],
+              "cooldown": "5",
+              "icon": "Units/Neutral/Artefacts/Sight",
+              "name": "Artefacts/Sight"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Artefact"
+            },
+            {
+              "name": "Invulnerable"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Artefacts",
+      "type": "Neutral/Artefacts",
+      "visible": "0",
+      "spawnWeight": "0"
+    },
+    {
+      "group": [
+        {
+          "size": "1"
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "hitpointsMax": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "levelMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "sight": [
+                    {
+                      "base": "1"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "move": [
+            {}
+          ],
+          "activate": [
+            {
+              "charges": "1",
+              "requiredUpgrade": "Necrons/LastStandReady"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Artefact"
+            },
+            {
+              "name": "Invulnerable"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Artefacts",
+      "type": "Neutral/Artefacts",
+      "spawnWeight": "0",
+      "icon": "Units/Neutral/Artefacts/AncientExterminatusDevice"
+    },
+    {
+      "group": [
+        {
+          "size": "1"
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "hitpointsMax": [
+                    {
+                      "base": "1"
+                    }
+                  ],
+                  "levelMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "0"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "max": "0"
+                    }
+                  ],
+                  "sight": [
+                    {
+                      "base": "1"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "genericUnitAbility": [
+            {
+              "beginTargets": [
+                {
+                  "target": [
+                    {
+                      "conditions": [
+                        {
+                          "unit": [
+                            {
+                              "allied": [
+                                ""
+                              ],
+                              "noTrait": [
+                                {
+                                  "name": "Flyer"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "areas": [
+                        {
+                          "area": [
+                            {
+                              "modifiers": [
+                                {
+                                  "modifier": [
+                                    {
+                                      "effects": [
+                                        {
+                                          "addTrait": [
+                                            {
+                                              "duration": "5",
+                                              "name": "Artefacts/Movement"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "affects": "Unit"
+                            }
+                          ]
+                        }
+                      ],
+                      "rangeMax": "-1"
+                    }
+                  ]
+                }
+              ],
+              "cooldown": "5",
+              "icon": "Units/Neutral/Artefacts/Movement",
+              "name": "Artefacts/Movement"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "trait": [
+            {
+              "name": "Artefact"
+            },
+            {
+              "name": "Invulnerable"
+            }
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Artefacts",
+      "type": "Neutral/Artefacts",
+      "visible": "0",
+      "spawnWeight": "0"
+    },
+    {
+      "weapons": [
+        {
+          "weapon": [
+            {
+              "name": "Frazzle"
+            }
+          ]
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": [
+            {
+              "effects": [
+                {
+                  "armor": [
+                    {
+                      "base": "10"
+                    }
+                  ],
+                  "hitpointsMax": [
+                    {
+                      "base": "32.0"
+                    }
+                  ],
+                  "moraleMax": [
+                    {
+                      "base": "10"
+                    }
+                  ],
+                  "movementMax": [
+                    {
+                      "base": "2"
+                    }
+                  ],
+                  "productionCost": [
+                    {
+                      "base": "36.0"
+                    }
+                  ],
+                  "sight": [
+                    {
+                      "base": "3"
+                    }
+                  ]
+                }
+              ],
+              "visible": "0"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "move": [
+            {}
+          ],
+          "attack": [
+            {}
+          ],
+          "die": [
+            {}
+          ]
+        }
+      ],
+      "army": "Neutral",
+      "name": "Artefacts",
+      "type": "Neutral/Artefacts",
+      "spawnWeight": "0",
+      "icon": "Units/Neutral/Artefacts/AncientExterminatusDevice"
+    }
+  ]
+}

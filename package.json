@@ -12,6 +12,7 @@
     "prettier": "prettier --ignore-path .gitignore --write .",
     "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore",
     "prepare": "husky install",
+    "predata": "rimraf data/* public/game/*",
     "data": "node -r @swc-node/register scripts/get-data.ts"
   },
   "husky": {
@@ -45,6 +46,7 @@
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "autoprefixer": "^10.4.1",
+    "copy": "^0.3.2",
     "eslint": "^8.6.0",
     "eslint-config-next": "^12.0.7",
     "eslint-config-prettier": "^8.3.0",
@@ -55,6 +57,7 @@
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "recursive-readdir": "^2.2.2",
+    "rimraf": "^3.0.2",
     "tailwindcss": "^3.0.9",
     "typescript": "^4.5.4"
   }
