@@ -25,6 +25,8 @@ const FACTIONS = path.join(BASE, 'Factions')
 const UNITS = path.join(BASE, 'Units')
 const BUILDINGS = path.join(BASE, 'Buildings')
 const UPGRADES = path.join(BASE, 'Upgrades')
+const WEAPONS = path.join(BASE, 'Weapons')
+const TRAITS = path.join(BASE, 'Traits')
 
 async function getDirFiles(path: string) {
   return readdir(path).then((files) => {
@@ -139,12 +141,19 @@ async function copyPromise(path: string, dest: string, opts: any) {
   })
 }
 
+const INCLUDE_ASSETs = true
+
 // eslint-disable-next-line @typescript-eslint/no-extra-semi
 ;(async () => {
   console.info('[start]')
-  console.info('[icons:start]')
-  await copyPromise('**/*.dds', ASSETS, { cwd: path.join(BASE, '..', 'Video', 'Textures', 'Icons') })
-  console.info('[icons:end]')
+  await fs.mkdir(path.join(OUT, 'army'))
+  if (INCLUDE_ASSETs) {
+    console.info('[icons:start]')
+    await copyPromise('**/*.dds', ASSETS, { cwd: path.join(BASE, '..', 'Video', 'Textures', 'Icons') })
+    console.info('[icons:end]')
+  } else {
+    console.info('[icons:skip]')
+  }
   const factions = await getDirFiles(FACTIONS)
   const { getTexts: getFactionTexts } = await getTexts('Factions')
   for (const f of factions) {
@@ -157,11 +166,47 @@ async function copyPromise(path: string, dest: string, opts: any) {
         actions: f.data.faction.actions,
         ...(await getFactionTexts(f.pathParts[0])),
       })
-      await fs.writeFile(path.join(OUT, `${f.pathParts[0]}.json`), JSON.stringify(toWrite, undefined, 2), 'utf-8')
+      await fs.writeFile(
+        path.join(OUT, 'army', `${f.pathParts[0]}.json`),
+        JSON.stringify(toWrite, undefined, 2),
+        'utf-8'
+      )
     } catch (e) {
       console.info('e', e.message.split('\n')[0])
     }
   }
+  console.info('[weapons:start]')
+  const { getTexts: getWeaponTexts } = await getTexts('Weapons')
+  const weapons = await Promise.all(
+    (
+      await getDirFiles(WEAPONS)
+    ).map(async (w) => {
+      return {
+        name: w.pathParts[0],
+        ...(await getWeaponTexts(w.pathParts[0])),
+        ...w.data.weapon,
+      }
+    })
+  )
+  await fs.writeFile(path.join(OUT, `weapons.json`), JSON.stringify(cleanObject(weapons), undefined, 2), 'utf-8')
+  console.info('[weapons:end]')
+  console.info('[traits:start]')
+  const { getTexts: getTraitTexts } = await getTexts('Traits')
+  const traits = await Promise.all(
+    (
+      await getDirFiles(TRAITS)
+    ).map(async (t) => {
+      return {
+        army: t.pathParts[0],
+        name: t.pathParts[0],
+        type: [t.pathParts[0], t.pathParts[1]].filter(Boolean).join('/'),
+        ...(await getTraitTexts(t.pathParts[0])),
+        ...t.data.trait,
+      }
+    })
+  )
+  await fs.writeFile(path.join(OUT, `traits.json`), JSON.stringify(cleanObject(traits), undefined, 2), 'utf-8')
+  console.info('[traits:end]')
   console.info('[units:start]')
   const units = await getDirFiles(UNITS)
   const { getTexts: getUnitTexts } = await getTexts('Units')
@@ -172,12 +217,20 @@ async function copyPromise(path: string, dest: string, opts: any) {
         army: u.pathParts[0],
         name: u.pathParts[1],
         type: `${u.pathParts[0]}/${u.pathParts[1]}`,
+        weapons: (u.data.unit.weapons || []).flatMap((ws) =>
+          (ws.weapon || []).map((w) => {
+            return Object.assign(
+              w.$,
+              weapons.find(({ name }) => w.$.name === name)
+            )
+          })
+        ),
         ...(await getUnitTexts(`${u.pathParts[0]}/${u.pathParts[1]}`)),
       })
     )
   }
   for (const [army, units] of Object.entries(unitsByArmy)) {
-    await updateFile(path.join(OUT, `${army}.json`), { units })
+    await updateFile(path.join(OUT, 'army', `${army}.json`), { units })
   }
   console.info('[units:end]')
   console.info('[buildings:start]')
@@ -195,7 +248,7 @@ async function copyPromise(path: string, dest: string, opts: any) {
     )
   }
   for (const [army, buildings] of Object.entries(buildingsByArmy)) {
-    await updateFile(path.join(OUT, `${army}.json`), { buildings })
+    await updateFile(path.join(OUT, 'army', `${army}.json`), { buildings })
   }
   console.info('[buildings:end]')
   console.info('[upgrades:start]')
@@ -213,12 +266,10 @@ async function copyPromise(path: string, dest: string, opts: any) {
     )
   }
   for (const [army, upgrades] of Object.entries(upgradesByArmy)) {
-    await updateFile(path.join(OUT, `${army}.json`), { upgrades })
+    await updateFile(path.join(OUT, 'army', `${army}.json`), { upgrades })
   }
   console.info('[upgrades:end]')
   console.info('[end]')
 })()
-
-console.info('hey')
 
 export {}
