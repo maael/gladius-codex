@@ -2,3 +2,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.requires-upgrade {
+  filter: invert(50%) sepia(13%) saturate(4000%) hue-rotate(180deg) brightness(100%) contrast(90%);
+}
